@@ -7,8 +7,9 @@ import { Menu, X } from "lucide-react";
 
 const navigation = [
   { name: "About", href: "/about" },
-  { name: "Notable Sales", href: "/notable-sales" },
+  { name: "Notable Sales", href: "/" },
   { name: "Publications", href: "/publications" },
+  { name: "Gallery", href: "/gallery" },
   { name: "Press", href: "/press" },
   { name: "Contact", href: "/contact" },
 ];
@@ -19,6 +20,10 @@ export default function Navigation() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const isActiveLink = (href) => {
+    return pathname === href;
   };
 
   return (
@@ -58,7 +63,7 @@ export default function Navigation() {
                   <Link
                     href={item.href}
                     className={`block py-2 sm:py-0 hover:underline ${
-                      pathname === item.href ? "underline" : ""
+                      isActiveLink(item.href) ? "underline" : ""
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
