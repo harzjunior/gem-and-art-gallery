@@ -10,7 +10,7 @@ export default function About() {
           <div className="w-full md:w-[32%] mb-8 md:mb-0">
             <div className="relative aspect-[3/4] w-full">
               <Image
-                src="/assets/ali_fils.png"
+                src="/assets/Ali_fils.png"
                 alt="Ali Fils"
                 fill
                 priority
