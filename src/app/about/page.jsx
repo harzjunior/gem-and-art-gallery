@@ -8,12 +8,13 @@ export default function About() {
         <div className="flex flex-col md:flex-row md:space-x-12 lg:space-x-16">
           {/* Image Container - Full width on mobile, 1/3 on desktop */}
           <div className="w-full md:w-[32%] mb-8 md:mb-0">
-            <div className="relative w-full md:h-[45vh] ">
+            <div className="relative aspect-[3/4] w-full">
               <Image
                 src="/assets/ali_fils.png"
                 alt="Ali Fils"
                 fill
                 priority
+                sizes="(max-width: 768px) 100vw, 32vw"
                 className="object-cover"
               />
             </div>
