@@ -1,3 +1,3 @@
 export default function Publications() {
-  return <div>Publications </div>;
+  return <div>Publications Coming Soon </div>;
 }
